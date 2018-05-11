@@ -1,0 +1,44 @@
+.output1, .output2, #roll2, #winnerp1, #winnerp2 {
+  display: none;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+#startup {
+  display: none;
+}
+
+#startup {
+  padding-top: 20%;
+}
+
+#startup-content {
+  text-align: center;
+  box-shadow: 3px 3px 3px 3px;
+  border-radius: 3vh;
+  padding-bottom: 3vh;
+}
+
+#startup-submit {
+  font-size: 3vh;
+
+}
+
+.jumbotron{
+  text-align: center;
+}
+.panel{
+  height:50vh;
+  text-align: center;
+}
+#roll1, #roll2{
+  width: 15vh;
+}
+img{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
