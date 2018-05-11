@@ -1,7 +1,3 @@
-/**
- * @author Keith Mzaza <mzazakeith@gmail.com>
- */
-
 // Business logic
 player1Score = parseInt(0);
 player2Score = parseInt(0);
