@@ -1,3 +1,4 @@
+/* Keith Mzaza */
 .output1, .output2, #roll2, #winnerp1, #winnerp2 {
   display: none;
 }
@@ -34,7 +35,6 @@ body {
   border-radius: 3vh;
   padding-bottom: 3vh;
 }
-
 
 #startup-submit {
   font-size: 3vh;
@@ -100,25 +100,31 @@ img {
   background-color: rgba(255, 255, 255, 0.4);
   color: rgb(0, 0, 0);
 }
-label{
+
+label {
   color: rgb(255, 255, 255);
 }
-#p1, #p2{
+
+#p1, #p2 {
   font-weight: bold;
-  opacity:0.6;
+  opacity: 0.6;
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-#instructions{
+
+#instructions {
   text-align: left;
 }
-#instructions:hover{
+
+#instructions:hover {
   cursor: pointer;
 }
-#instruct{
+
+#instruct {
   display: none;
   color: rgb(255, 255, 255);
 }
-#instruct-content{
+
+#instruct-content {
   font-size: 18px;
 }
