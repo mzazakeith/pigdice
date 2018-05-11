@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css"> -->
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div id="startup">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="player1">Player 1 name:</label>
+              <input type="text" class="form-control" id="p1" placeholder="Enter name">
+            </div>
+          </form>
+          <div class="form-group">
+            <label for="player2">Player 2 name:</label>
+            <input type="text" class="form-control" id="p2" placeholder="Enter name">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gameplay">
+      <div class="jumbotron">
+
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <!-- player 1 -->
+          <img src="img/die-1.png" alt="" id="name">
+          <img src="img/die-6.png" alt="" id="name1">
+          <button id="roll1" type="button">Roll</button>
+          <div id="player1">
+            <p>Player 1</p>
+            <span class="player1Total"></span>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+
+          <!-- combinedoutput -->
+
+          <!-- player 1 -->
+          <div class="output1">
+            <span class="score1"></span>
+          </div>
+          <div id="winnerp1">
+            <h1>Winner</h1>
+          </div>
+          <!-- player 2 -->
+          <div class="output2">
+            <span class="score2"></span>
+            <div id="winnerp2">
+              <h1>Winner</h1>
+            </div>
+          </div>
+
+
+          <!-- end of combined output -->
+        </div>
+
+        <div class="col-md-5">
+          <!-- player 2 -->
+          <img src="img/die-6.png" alt="" id="name2">
+          <img src="img/die-1.png" alt="" id="name3">
+          <button id="roll2" type="button">Roll</button>
+          <div id="player2">
+            <p>Player 2</p>
+            <span class="player2Total"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
