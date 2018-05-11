@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css"> -->
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Document</title>
 
-</head>
+  </head>
 
-<body>
-  <div class="container">
-    <div id="startup">
-      <div class="row">
-        <div class="col-md-12">
-          <form>
-            <div class="form-group">
-              <label for="player1">Player 1 name:</label>
-              <input type="text" class="form-control" id="p1" placeholder="Enter name">
+  <body>
+    <div class="container-fluid">
+      <div id="startup">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+
+          <!-- start up screen -->
+          <div class="col-md-4" id="startup-content">
+            <form>
+              <div class="form-group">
+                <label for="player1"><h2>PLAYER 1 NAME:</h2></label>
+                <input type="text" class="form-control" id="p1" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="player2"><h2>PLAYER 2 NAME:</h2></label>
+                <input type="text" class="form-control" id="p2" placeholder="Enter name">
+              </div>
+              <button id="startup-submit" type="submit">PLAY <i class="glyphicon glyphicon-play" ></i></button>
+            </form>
+          </div>
+          <div class="col-md-4">
+
+            <!-- instructions -->
+            <span>
+            <i class="fas fa-info-circle fa-3x" style="color:rgb(255, 255, 255);"id="instructions"></span></i>
+            <div id="instruct">
+              <h1>HOW TO PLAY</h1>
+              <p id="instruct-content">On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during
+                this turn are forfeited. Rolling a 1 doesn't wipe out your entire score, just the total earned during that particular roll. When a player reaches a total of 100 or more points, the game ends and that player is the winner.</p>
             </div>
-          </form>
-          <div class="form-group">
-            <label for="player2">Player 2 name:</label>
-            <input type="text" class="form-control" id="p2" placeholder="Enter name">
+            </span>
+            <!-- end of instructions -->
+
           </div>
+          <!-- end of start up screen   -->
         </div>
       </div>
-    </div>
 
-    <div id="gameplay">
-      <div class="jumbotron">
+      <!-- gameplay screen -->
+      <div id="gameplay">
 
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <!-- player 1 -->
-          <img src="img/die-1.png" alt="" id="name">
-          <img src="img/die-6.png" alt="" id="name1">
-          <button id="roll1" type="button">Roll</button>
-          <div id="player1">
-            <p>Player 1</p>
-            <span class="player1Total"></span>
-          </div>
+        <!-- header  -->
+        <div class="jumbotron">
+          <h1>PIG DICE</h1>
         </div>
+        <!-- end of header -->
 
-        <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-5">
+            <!-- player 1 -->
+            <div class="panel">
 
-          <!-- combinedoutput -->
-
-          <!-- player 1 -->
-          <div class="output1">
-            <span class="score1"></span>
-          </div>
-          <div id="winnerp1">
-            <h1>Winner</h1>
-          </div>
-          <!-- player 2 -->
-          <div class="output2">
-            <span class="score2"></span>
-            <div id="winnerp2">
-              <h1>Winner</h1>
+              <h1><span class="firstplayer"></span></h1>
+              <img src="img/die-1.png" alt="" id="name">
+              <img src="img/die-6.png" alt="" id="name1">
+              <br/>
+              <button id="roll1" type="button"><i class="glyphicon glyphicon-refresh"></i>  ROLL</button>
+              <div id="winnerp1">
+                <h1>WINNER</h1>
+              </div>
+              <div id="player1">
+                <h2>Player Total Score:</h2>
+                <h2><span class="player1Total"></span></h2>
+              </div>
             </div>
           </div>
+          <!-- end of player 1 -->
+
+          <div class="col-md-2">
+
+            <!-- combinedoutput -->
+
+            <!-- player 1 -->
+            <div class="output1">
+              <h1>You rolled:</h1>
+              <h1><span class="score1"></span></h1>
+              <button class="new" type="button"><i class="glyphicon glyphicon-plus-sign"></i> New Game</button>
+              <button class="newer" type="button"><i class="glyphicon glyphicon-plus-sign"></i> New Game</button>
+            </div>
+
+            <!-- player 2 -->
+            <div class="output2">
+              <h1>You rolled:</h1>
+              <h1><span class="score2"></span></h1>
+              <button class="new" type="button"><i class="glyphicon glyphicon-plus-sign"></i> New Game</button>
+              <button class="newer" type="button"><i class="glyphicon glyphicon-plus-sign"></i> New Game</button>
+
+            </div>
 
 
-          <!-- end of combined output -->
-        </div>
-
-        <div class="col-md-5">
-          <!-- player 2 -->
-          <img src="img/die-6.png" alt="" id="name2">
-          <img src="img/die-1.png" alt="" id="name3">
-          <button id="roll2" type="button">Roll</button>
-          <div id="player2">
-            <p>Player 2</p>
-            <span class="player2Total"></span>
+            <!-- end of combined output -->
           </div>
+
+
+          <div class="col-md-5">
+            <!-- player 2 -->
+            <div class="panel">
+
+              <h1><span class="secondplayer"></span></h1>
+              <img src="img/die-6.png" alt="" id="name2">
+              <img src="img/die-1.png" alt="" id="name3">
+              <br/>
+              <button id="roll2" type="button"><i class="glyphicon glyphicon-refresh"></i>  ROLL</button>
+              <div id="winnerp2">
+                <h1>WINNER</h1>
+              </div>
+              <div id="player2">
+                <h2>Player Total Score:</h2>
+                <h2><span class="player2Total"></span></h2>
+              </div>
+            </div>
+          </div>
+          <!-- end of player 2 -->
         </div>
       </div>
+      <!-- end of gameplay screen -->
+
     </div>
-  </div>
-</body>
+  </body>
 
 </html>
