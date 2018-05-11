@@ -2,18 +2,30 @@
   display: none;
 }
 
+.output1, .output2 {
+  text-align: center;
+}
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
   max-height: 100%;
 }
 
-#startup {
+body {
+  background-image: url(../img/bg.jpg!d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#gameplay {
   display: none;
+  color: rgb(255, 255, 255);
 }
 
 #startup {
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 #startup-content {
@@ -23,22 +35,90 @@ html, body {
   padding-bottom: 3vh;
 }
 
+
 #startup-submit {
   font-size: 3vh;
-
-}
-
-.jumbotron{
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 25px;
   text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-.panel{
-  height:50vh;
+
+.jumbotron {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
 }
-#roll1, #roll2{
+
+.panel {
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0)
+}
+
+#roll1, #roll2 {
   width: 15vh;
+  padding: 6px 12px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
 }
-img{
-  padding-top: 3vh;
+
+img {
+  padding-top: 2vh;
   padding-bottom: 3vh;
+}
+
+.new {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
+}
+
+.newer {
+  display: none;
+  padding: 6px 12px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
+}
+label{
+  color: rgb(255, 255, 255);
+}
+#p1, #p2{
+  font-weight: bold;
+  opacity:0.6;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+#instructions{
+  text-align: left;
+}
+#instructions:hover{
+  cursor: pointer;
+}
+#instruct{
+  display: none;
+  color: rgb(255, 255, 255);
+}
+#instruct-content{
+  font-size: 18px;
 }
