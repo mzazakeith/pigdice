@@ -77,12 +77,12 @@ $(document).ready(function() {
     player1Score = parseInt((player1Score) + (diep1));
     $(".player1Total").text(player1Score);
 
-    if(player1Score>=100){
-    $("#winnerp1").show();
-    $("#roll2").hide();
-    $("#roll1").hide();
-    $(".new").hide();
-    $(".newer").show();
+    if (player1Score >= 100) {
+      $("#winnerp1").show();
+      $("#roll2").hide();
+      $("#roll1").hide();
+      $(".new").hide();
+      $(".newer").show();
     }
 
   });
@@ -105,12 +105,15 @@ $(document).ready(function() {
     player2Score = parseInt((player2Score) + (diep2));
     $(".player2Total").text(player2Score);
 
-    if(player2Score>=100){
-    $("#winnerp2").show();
-    $("#roll2").hide();
-    $("#roll1").hide();
-    $(".new").hide();
-    $(".newer").show();
+    if (player2Score >= 100) {
+      $("#winnerp2").show();
+      $("#roll2").hide();
+      $("#roll1").hide();
+      $(".new").hide();
+      $(".newer").show();
     }
   });
-});
+  $("#instructions").click(function() {
+    $("#instruct").toggle();
+  });
+})
